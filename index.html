@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demoApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Twitter Timeline Directive - Demo</title>
+	<base href=".."></base>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="src/twitter-timeline.js"></script>
+	<script>
+		var app = angular.module('demoApp', ['twitter.timeline']);
+	</script>
+</head>
+<body style="padding: 1.2em;">
+	<h1>Twitter Timeline Directive - Demo</h1>
+	<!--<h4><a href="https://twitter.com/timothyej">@timothyej</a></h4>
+	
+	<div twitter-timeline="389865135445000192" auto-resize="true" css-url="demo/demo.css" data-tweet-limit="25">Loading tweets...</div>
+-->
+        <a class="twitter-timeline"  href="https://twitter.com/hashtag/AngularJS" data-widget-id="838507276289757184">#AngularJS Tweets</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+</body>
+</html>
